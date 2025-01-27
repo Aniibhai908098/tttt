@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #9147ff;
+    --primary-dark: #7126c1;
+    --background-color: #0e0e10;
+    --text-primary: #efeff1;
+    --text-secondary: #adadb8;
+    --border-color: #2d2d2d;
+    --error-color: #ff4747;
+    --success-color: #47ff9c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.url-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.url-input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--background-color);
+    color: var(--text-primary);
+}
+
+.submit-button {
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background: var(--primary-dark);
+}
+
+.status-message {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.status-message.error {
+    color: var(--error-color);
+}
+
+.status-message.success {
+    color: var(--success-color);
+}
+
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
