@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Clip Downloader</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/component.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Twitch Clip Downloader</h1>
+        </header>
+
+        <main class="main-content">
+            <section id="urlInputSection" class="url-section">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="clipUrl" 
+                        class="url-input" 
+                        placeholder="Paste Twitch clip URL here..."
+                    >
+                    <button id="submitBtn" class="submit-button">Download</button>
+                </div>
+                <p id="statusMsg" class="status-message"></p>
+            </section>
+            <section id="clipInfoSection" class="clip-section"></section>
+            <section id="qualitySection" class="quality-section"></section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Twitch Clip Downloader</p>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
